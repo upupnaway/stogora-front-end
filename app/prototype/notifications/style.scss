@@ -1,0 +1,15 @@
+.notifications-container {
+  .notification-item-container {
+    padding: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, .25);
+
+    &:hover {
+			background-color: rgb(48, 151, 209);
+    }
+
+    .date-container {
+      vertical-align: bottom;
+      text-align: right;
+    }
+  }
+}

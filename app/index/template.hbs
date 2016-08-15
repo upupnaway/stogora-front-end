@@ -1,0 +1,76 @@
+<div id="beta_container">
+  <div class="navbar">
+      <h1>Stogora</h1>
+  </div>
+  <div class="container-fluid form-container">
+    <div class="row">
+      <div class="col-sm-3"></div>
+      <div class="col-sm-6">
+        <div class="beta-info">
+          <h2>Prepare to say goodbye to listing fees</h2>
+          <h4>Buying and selling online should be easy, fun, and FREE</h4>
+          <div class="row">
+          <div class="col-sm-2"></div>
+          <div class="col-sm-8">
+            {{#unless submitted}}
+              <div class="beta-form form-group {{if emailError "has-error"}}">
+                {{#if emailError}}
+                  <label class="control-label">Invalid email</label>
+                {{/if}}
+                {{input type='email' value=email class="form-control" placeholder="Email"}}
+              </div>
+              {{#unless isLoadingAjax}}
+                <button{{action "notifyMe"}} class="btn btn-primary beta-early">Notify me when its ready</button>
+              {{/unless}}
+              {{#if isLoadingAjax}}
+                <img class="spinner" src="https://s3.amazonaws.com/stogora/335.GIF"/>
+              {{/if}}
+            {{/unless}}
+            {{#if submitted}}
+              <h4 class="thanks-text">Thanks! You will be notified when Stogora is live</h4>
+            {{/if}}
+          </div>  
+          <div class="col-sm-2"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3"></div>
+    </div>
+  </div>
+</div>
+<div id="question_container">
+  <div class='container'>
+    <div class="row">
+      <div class="col-sm-6 question">
+        <h5>Tired of those 10%+ listing fees?</h5>
+        <div class="text-muted">Stogora is a free to use marketplace that will allow users to list their items free of fees. Sellers shouldn't have to pay outrageous listing fees just to sell an item. We believe helping the sellers save money in listings fees will translate to lower prices for buyers. A win-win for everyone!</div>
+      </div>
+      <div class="col-sm-6 question">
+        <h5>Tired of spending hours finding the perfect item?</h5>
+        <div class="text-muted">Buyers, Stogora is dedicated to the buyer to item and buyer to seller matchmaking process. We're going to make it extremely simple and fast for you to find what you want, when you want, and at a price you want.</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6 question">
+        <h5>Tired of not being able to build your brand?</h5>
+        <div class="text-muted">Sellers, we understand how hard it is to market and build your store's online presence in today's peer-to-peer marketplaces. Stogora is going to make it convenient and natural for you to reach out and retain your customers.</div>
+      </div>
+      <div class="col-sm-6 question">
+        <h5>Tired of waiting?</h5>
+        <div class="text-muted">We're doing our best to create the best and most complete peer-to-peer marketplace experience for our users. The more users we get interested in Stogora the quicker we will be able to move forward. Help us by signing up and sharing on social media!</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="footer">
+  <div class="container-fluid">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4 social-media-share">
+      <div class="fb-share-button" data-href="https://www.stogora.com" data-layout="button"></div>
+      <span>
+      <a href="https://twitter.com/share" class="twitter-share-button" data-url="https://www.stogora.com" data-text="Goodbye to marketplace listing fees!" data-count="none">Tweet</a>
+      </span>
+    </div>
+    <div class="col-sm-4"></div>
+  </div>
+</div>

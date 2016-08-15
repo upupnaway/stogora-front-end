@@ -1,0 +1,21 @@
+<div class="row">
+	<div class="message-thread-name-container col-xs-12">
+		<h2>{{model.partnerName }}</h2>
+	</div>
+	<div class="col-xs-12 new-message-user-selection">
+		To: 
+	</div>
+</div>
+<div class="message-thread-container row">
+	{{messages/thread-view messages=model.messages}}
+</div>
+<div class="new-message-form-container row">
+	<div class="col-xs-12">
+		<form>
+		  <fieldset>
+		  	{{textarea value=userInputMsg class="form-control msg-input-textbox" rows="3" placeholder="Type a message"}}
+		  </fieldset>
+	 	 <button {{action "messageSubmitDidClick" userInputMsg}} type="submit" class="btn btn-primary pull-right">Submit</button>
+		</form>
+	</div>
+</div>

@@ -1,0 +1,36 @@
+@import "vendor/bootstrap/scss/bootstrap";
+@import "pods";
+
+.info-banner {
+  background: #ffffff;
+  color: #565a5c;
+  margin-bottom: 0;
+  h1 {
+    font-weight:normal;
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  padding: 25px 0 15px 0;
+}
+
+.secondary {
+  background-color: $grey-panel-color;
+}
+
+.listing-form {
+  margin-top:2em;
+  margin-bottom: 2em;
+  textarea {
+    height: 8em;
+  }
+}
+.listing-next {
+  margin-bottom: 2em;
+}
+
+.half {
+  width: 25%;
+  display: inline;
+} 

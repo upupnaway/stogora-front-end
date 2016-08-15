@@ -1,0 +1,28 @@
+<div class="container-fluid discussion">
+  {{#thread-listing listing=model.thread}}{{/thread-listing}}
+</div>
+<div class="container-fluid discussion">
+  <div class="col-md-1"></div>
+  <div class="col-md-11">
+  	<div class="row">
+      {{#if session.isAuthenticated}}
+      <div class="col-md-12">
+        <div class="comment-card">
+          <div class="card card-block">
+            {{textarea class="form-control" value=newCommentMessage}}
+            <div class="text-left">
+              <button {{action "submitNewCommentDidClick"}} type="button" class="btn btn-primary">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      {{/if}}
+	  	<div class="col-md-12">
+	    {{#each model.thread.comments as |comment|}}
+	     {{#comment-card comment=comment}}{{/comment-card}}
+	    {{/each}}
+	  </div>
+  	</div>
+  </div>
+</div>
+{{#checkout-modal}}{{/checkout-modal}}

@@ -1,0 +1,16 @@
+{{#if displayData}}
+  {{#g-map lat=centerLat lng=centerLng zoom=12 as |context|}}
+    {{#each displayData as |zipCodeWithListings|}}
+      {{#g-map-marker context lat=zipCodeWithListings.locationData.geometry.location.lat lng=zipCodeWithListings.locationData.geometry.location.lng as |markerContext|}}
+      <!--
+        {{#g-map-infowindow markerContext}}
+          <h5>{{zipCodeWithListings.locationData.formatted_address}}</h5>
+          {{#each zipCodeWithListings.listings as |listing|}}
+          {{google-map/windows/listing-entry listing=listing}}
+          {{/each}}
+        {{/g-map-infowindow}}
+        -->
+      {{/g-map-marker}}
+    {{/each}}
+  {{/g-map}}
+{{/if}}

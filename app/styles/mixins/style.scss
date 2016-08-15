@@ -1,0 +1,59 @@
+$theme-color: #3097d1;
+$theme-border-color: #1c73a5;
+$off-color: #565a5c;
+$grey-panel-color: #f5f5f5;
+
+
+// $theme-color: #329393;
+// $theme-border-color: #329393;
+
+@mixin default-font($size) {
+  color: white;
+  font-weight:100;
+  font-size: $size;
+  cursor: pointer;
+}
+@mixin links {
+  text-decoration: none;
+  background-color: transparent;
+  a {
+    style: pointer;
+    color: white;
+    text-decoration:none;
+  }
+  a:link {
+    color: white;
+  }
+  a:visited {
+    color: white;
+    text-decoration: none;
+  }
+  a:hover {
+    color: white;
+    text-decoration: none;
+  }
+  a:active {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+@mixin dark-links {
+  text-decoration: none;
+  background-color: transparent;
+  a:link {
+    color: #d9534f;
+  }
+  a:visited {
+    color: #d9534f;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #d9534f;
+    text-decoration: none;
+  }
+  a:active {
+    color: #d9534f;
+    text-decoration: none;
+  }
+}

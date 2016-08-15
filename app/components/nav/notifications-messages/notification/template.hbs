@@ -1,0 +1,27 @@
+{{#if isDirectMessageNotification}}
+  <div class="image-container">
+    <img class="img-thumbnail pull-left" src="http://placehold.it/40x40">
+  </div>
+  <div class="message-notification">
+    <div class="">{{notification.sender}}</div>
+    <div class="thread-title-container">{{notification.body}}</div>
+    <div class="date-container"> {{englishDate}}</div>
+  </div>
+{{else if isCommentNotification}}
+  <div class="image-container">
+    <img class="img-thumbnail pull-left" src="http://placehold.it/40x40">
+  </div>
+  <div class="message-notification">
+    <div class="">{{notification.body}} on</div>
+    <div class="thread-title-container">{{notification.threadTitle}}</div>
+    <div class="date-container">{{englishDate}} <span class="label label-pill label-default notification-count">#{{notification.stag}}</span></div>
+  </div>
+{{else}}
+  <div class="image-container">
+    <img class="img-thumbnail pull-left" src="http://placehold.it/40x40">
+  </div>
+  <div class="message-notification">
+    <div class="">{{notification.body}}</div>
+    <div class="date-container">{{englishDate}} <span class="label label-pill label-default notification-count">#{{notification.stag}}</span></div>
+  </div>
+{{/if}}

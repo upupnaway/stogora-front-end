@@ -1,0 +1,49 @@
+@import "app/styles/mixins/style";
+
+.nav-link {
+  font-weight: 100;
+  color: white;
+  margin-right: 20px;
+  cursor: pointer;
+  @include links;
+}
+
+a.navbar-brand {
+  color: #FFFFFF;
+  font-weight:100;
+  a {
+    color: #FFFFFF;
+    @include  links;
+  }
+}
+
+.banner-container {
+  overflow: hidden;
+  max-height: 10rem;
+}
+.bottom {
+  margin-top: 10px !important;
+}
+.profile-pic {
+  height: 2.5em;
+}
+.stogora {
+  background-color: $theme-color;
+  border-color: $theme-border-color;
+  border-radius: 0em !important;
+}
+.title { @include default-font(1.5em); }
+.expand-icon {
+  color: white;
+}
+.hash-button {
+  background-color : white !important;
+}
+
+.authenticated-dropdown-container {
+  .dropdown-toggle {
+    color: #FFFFFF;
+    margin-top: 9px;
+    cursor: pointer;
+  }
+}

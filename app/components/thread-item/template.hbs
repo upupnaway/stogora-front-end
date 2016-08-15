@@ -1,0 +1,20 @@
+<div class="card card-block thread-item">
+  <div class="row">
+    <div class="col-sm-3">
+      {{#link-to 'prototype.listing.thread'thread.id}}<img src={{thread.photo}} class="img-thumbnail">{{/link-to}}
+    </div>
+    <div class="col-sm-6">
+    <h3 class="card-title listing-title">{{#link-to 'prototype.listing.thread' thread.id}}{{thread.title}}{{/link-to}}</h3>
+    <p class="card-text">{{thread.subtitle}}</p>
+    <img src={{thread.user.profilePhoto}} class="profile-pic img-circle">
+    <span class="seller-name">{{#link-to 'prototype.user.profile' thread.user.id}}{{thread.user.userName}}{{/link-to}}</span>
+    <span class="posted">
+      <span>Posted in</span>
+      <span>{{thread.stag.slug}}</span>
+    </span>
+    </div>
+    <div class="col-sm-3">
+      <h4 class="pull-right">${{thread.price}}</h4>
+    </div>
+  </div>
+</div>

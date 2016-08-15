@@ -1,0 +1,41 @@
+<div class="thread-listing">
+  <div class="card card-block">
+    <div class="row">
+      <div class="col-sm-3">
+        <img src={{listing.photo}} class="img-thumbnail">
+      </div>
+      <div class="col-sm-6">
+      <div class="card-title">
+        <span class="listing-title">{{listing.title}}</span>
+        <div class="seller-info">
+          <span>Posted in</span>
+          <span class="stag">{{listing.stag.slug}}</span>
+          <span>{{time_posted}}</span>
+          <span>by</span>
+          <img src={{listing.user.profilePhoto}} class="profile-pic img-circle">
+          <span>{{#link-to 'prototype.user.profile' listing.user.id}}{{listing.user.userName}}{{/link-to}}</span>
+        </div>
+      </div>
+      <div class="qty">
+        <span class="reference">Quantity: </span>
+        <span>{{listing.quantity}}</span>
+        <span> left</span>
+      </div>
+      <div>
+        <span class="reference">Item Location: </span>
+        <span>{{listing.zipLoc}}</span>
+      </div>
+      <span class="reference">Description:</span>
+      <span class="card-text">{{listing.description}}</span>
+      </div>
+      <div class="col-sm-3">
+        <div>
+          <h4 class="pull-right">${{listing.price}} Each</h4>
+        </div>
+      </div>
+        <div class="col-sm-3">
+        <button type="button" class="btn btn-primary pull-right checkout" data-toggle="modal" data-target="#checkout-modal">Checkout</button>
+        </div>
+    </div>
+  </div>
+</div>

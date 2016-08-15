@@ -1,0 +1,21 @@
+<span class="label label-pill label-warning notification-count"><i class="fa fa-bell"></i> {{notifications.notifications.length}}</span>
+{{#if dropDownIsOpen}}
+<div class="dropdown-container">
+	<div class="caret-container">
+		<i class="fa fa-caret-up fa-2x"></i>
+	</div>
+
+	
+	<ul class="notifications-list">
+		<li class="dropdown-header">
+			<h6>Notifications</h6>
+		</li>
+		{{#each notifications.notifications as |notification|}}
+			{{nav/notifications-messages/notification notification=notification}}
+		{{/each}}
+    <li {{action "seeAllDidClick"}} class="see-all-container">
+			See All
+		</li>
+	</ul>
+</div>
+{{/if}}

@@ -1,0 +1,12 @@
+<div class="container-fluid thread-list">
+  <div class="col-md-4 pull-right options">
+    {{#stag-options activeStag=model.activeStag}}{{/stag-options}}
+    {{google-map/multiple-listings listings=model.threads}}
+  </div>
+  <div class="col-md-8">
+    {{#thread-list threads=model.threads}}{{/thread-list}}
+  </div>
+  <div class="container-fixed">
+  </div>
+</div>
+

@@ -1,0 +1,6 @@
+<div class="container">
+  {{#user-info-banner action="changeFollowStatus" user=model.userProfile followingStatus=model.followingStatus currentUserProfileId=model.currentUserProfileId}}{{/user-info-banner}}
+</div>
+<div class="container">
+{{#thread-grid threads=model.threads}}{{/thread-grid}}
+</div>

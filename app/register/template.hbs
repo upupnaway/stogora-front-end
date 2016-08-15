@@ -1,0 +1,56 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3">
+      <div class="panel panel-default">
+        <!-- Default panel contents -->
+        <div class="panel-heading">
+          <h2 class="text-center">Register for Stogora</h2>
+        </div>
+        <div class="panel-body">
+
+          <form class="{{if errorFlashMessage "has-error"}} {{if isLoadingAjax "loading"}}">
+            {{#if errorFlashMessage}}
+              <div class="alert alert-danger">
+                <p>{{errorFlashMessage}}</p>
+              </div>
+            {{/if}}
+            <div class="form-group row">
+              <div class="col-xs-6 {{if firstNameError "has-error"}}">
+                <label>First Name</label>
+                {{input class="form-control" value=firstName placeholder="First Name"}}
+              </div>
+              <div class="col-xs-6 {{if lastNameError "has-error"}}">
+                <label>Last Name</label>
+                {{input class="form-control" value=lastName placeholder="Last Name"}}
+              </div>
+            </div>
+            <div class="form-group {{if emailError "has-error"}}">
+              <label>Email</label>
+              {{input class="form-control" value=email placeholder="Email"}}
+            </div>
+            <div class="form-group {{if passwordError "has-error"}}">
+              <label>Password</label>
+              {{input class="form-control" value=password type="password" placeholder="Password"}}
+            </div>
+            <div class="form-group {{if confirmPasswordError "has-error"}}">
+              <label>Confirm Password</label>
+              {{input class="form-control" value=confirmPassword type="password" placeholder="Confirm Password"}}
+            </div>
+            <button {{action "submitRegistration"}} type="submit" class="btn btn-block btn-warning">
+              Register
+            </button>
+          </form>
+        </div>
+        <ul class="list-group">
+          <li class="list-group-item text-center register-or-list-item">Or</li>
+          <li class="list-group-item">
+            <button {{action "registerWithFacebook"}} class="btn btn-primary btn-block" type="button"><i
+              class="facebook icon"></i>Register with Facebook
+            </button>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</div>

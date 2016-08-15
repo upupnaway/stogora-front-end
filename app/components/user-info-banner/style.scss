@@ -1,0 +1,36 @@
+.user-info-banner {
+  .star-container {
+    color: $theme-color;
+    font-size: 2rem;
+    float:right;
+    margin-top: 1em;
+  }
+  .profile-photo {
+    max-height: 10em;
+    max-width: 10em;
+    height: 100%;
+    width: 100%;
+    margin-top: 20%
+  }
+  .follow {
+    margin-bottom: 2em;
+  }
+  .full-name {
+    font-weight: 300;
+  }
+
+  ul {
+    list-style-type:none;
+  }
+  li {
+    display: inline;
+    padding: 0 3% 0 3%;
+    border-right : 1px solid;
+  }
+  li:last-child {
+    border-right: none;
+  }
+  li:first-child {
+    padding-left:0;
+  }
+}

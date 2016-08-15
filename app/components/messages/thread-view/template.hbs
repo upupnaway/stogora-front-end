@@ -1,0 +1,7 @@
+{{#each messagesSorted as |message|}}
+	{{#if (does-match message.senderId session.session.content.authenticated.id)}}
+		{{messages/message-bubble message=message isViewingUser=true}}
+	{{else}}
+		{{messages/message-bubble message=message isViewingUser=false}}
+	{{/if}}
+{{/each}}

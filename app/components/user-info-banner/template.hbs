@@ -1,0 +1,63 @@
+<div class="user-info-banner">
+  <div class="row">
+    <div class="col-sm-2">
+      <img src={{user.profilePhoto}} class="img-circle profile-photo">
+    </div>
+    <div class="col-sm-10">
+      <div class="jumbotron-fluid">
+        <div class="row">
+        <div class="col-sm-6">
+            <span class="display-1">{{user.userName}}</span>
+          {{#if shouldShowFollowButton}}
+            {{#if followingStatus}}
+              <span><button {{action "unfollowDidClick"}} class="btn btn-secondary btn-sm follow" href="#" role="button">Unfollow</button></span>
+            {{else}} 
+              <span><button {{action "followDidClick"}} class="btn btn-secondary btn-sm follow" href="#" role="button">Follow</button></span>
+            {{/if}}
+          {{/if}}
+        </div>
+        <div class="col-sm-6">
+          <span class="star-container">
+          {{#each stars as |star|}}
+            {{#if star}}
+              {{fa-icon "star"}}
+            {{/if}}
+            {{#unless star}}
+              {{fa-icon "star-o"}}
+            {{/unless}}
+          {{/each}}
+          </span>
+          </div>
+        </div>
+          <div class='text-muted full-name'>
+            <span>{{user.firstName}}</span>
+            <span>{{user.lastName}}</span>
+          </div>
+          <hr class="m-y-md">
+          <ul class="text-muted">
+            <li>
+              <span>1</span>
+              <span>Followers</span>
+            </li>
+            <li>
+              <span>1</span>
+              <span>Following</span>
+            </li>
+            <li>
+              <span>3</span>
+              <span>Listings</span>
+            </li>
+            <li>
+              <span>10</span>
+              <span>Transactions</span>
+            </li>
+            <li>
+              <span>5</span>
+              <span>Communities</span>
+            </li>
+          </ul>
+      </div>
+    </div>
+  </div>
+</div>
+

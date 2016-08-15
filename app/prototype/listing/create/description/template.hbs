@@ -1,0 +1,37 @@
+<div class="container">
+  <div>
+  <div class="col-md-6">
+    <form class="listing-form">
+      <fieldset class="form-group">
+        <label>Item Title</label>
+        {{input value=model.title class="form-control" placeholder="e.g. Brand New Xbox One Console" required = true}}
+      </fieldset>
+      <fieldset class="form-group">
+        <label>Subtitle</label>
+        {{input value=model.subtitle class="form-control" placeholder="Eye-catching statement about your item" required = false}}
+      </fieldset>
+      <fieldset class="form-group half">
+        <label>Price</label>
+          {{input value=model.price class="form-control" placeholder="$" required = false}}
+      </fieldset>
+      <fieldset class="form-group half">
+        <label>Qty</label>
+          {{input value=model.quantity class="form-control" required = true}}
+      </fieldset>
+      <fieldset class="form-group half">
+        <label>Item Location</label>
+          {{input value=model.zipLoc class="form-control" placeholder="Zip Code" required = false}}
+      </fieldset>
+    </form>
+  </div>
+  <div class="col-md-6">
+    <form class="listing-form">
+      <fieldset class="form-group">
+        <label>Item Description</label>
+        {{textarea value=model.description class="form-control" placeholder="Enter description of the item you're listing here" required = true}}
+      </fieldset>
+    </form>
+  </div>
+  </div>
+  <button {{action "listingSumbmitDidClick"}} class="btn btn-primary btn-lg btn-block listing-next">Next</button>
+</div>

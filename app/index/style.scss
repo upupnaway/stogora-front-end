@@ -1,0 +1,70 @@
+.fb_iframe_widget {
+  span {
+    vertical-align: initial !important;
+  }
+}
+#question_container {
+  font-size: 16px;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+  padding-top: 50px;
+  padding-bottom: 24px;
+  width: 100%;
+  margin: 80px 0 0px;
+  .question {
+    margin-bottom:38px;
+    h5 {
+      color: #363945;
+      font-size: 16px;
+    }
+  }
+}
+#beta_container {
+  font-size: 16px;
+  font-family: "Whitney A", "Whitney B", "Avenir", Helvetica, sans-serif;
+  background-image: url('https://i.imgur.com/p4ozrI1.gif');
+  // background: #3097d1;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  height:100vh;
+  min-height:500px;
+  .navbar {
+    font-weight:300;
+    // margin-top: 26px;
+    padding: 26px 49px 0 45px
+
+  }
+  .spinner {
+    height:30px;
+    margin-top:40px
+  }
+  .form-container {
+    margin-top: 74px;
+    padding: 20px 20px 30px;
+  }
+  .beta-info {
+    text-align:center;
+    h4 {
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight:500;
+      opacity: .85;
+    }
+    .thanks-text {
+      opacity:1;
+      margin-top:40px;
+    }
+  }
+  .beta-form {
+    margin-top:45px;
+  }
+  .beta-early {
+    margin-top:30px;
+  }
+}
+#footer {
+  margin-bottom:20px;
+  .social-media-share {
+    text-align:center;
+  }
+}

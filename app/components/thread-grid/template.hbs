@@ -1,0 +1,7 @@
+<div class="card-group">
+  {{#each threads as |thread|}}
+  <div class="col-sm-4">
+  {{#thread-card thread = thread}}{{/thread-card}}
+  </div>
+  {{/each}}
+</div>

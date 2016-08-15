@@ -1,0 +1,12 @@
+<div class="thread-card">
+  <div class="card-group">
+    <div class="card">
+      <img class="card-img-top" src={{thread.photo}}>
+      <div class="card-block">
+        <h4 class="card-title">{{#link-to 'prototype.listing.thread' thread.id}}{{thread.title}}{{/link-to}}</h4>
+        <p class="card-text">{{thread.subtitle}}</p>
+        <p class="card-text"><small class="text-muted">posted in {{thread.stag.slug}} {{timePosted}}</small></p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,28 @@
+.thread-listing {
+  color: #666666;
+  .card-title {
+    font-size:1.5em;
+  }
+  .listing-title {
+    color: #666666;
+    margin-right:10px;
+  }
+  .seller-info {
+    font-size:.4em;
+    a {
+      color: #cccccc;
+    }
+  }
+  .reference {
+    font-weight: 500;
+    color: $theme-color;
+  }
+  @media only screen and (max-width:548px) {
+    .checkout {
+      float:left !important;
+    }
+  }
+  .stag {
+    color: $theme-color;
+  }
+}

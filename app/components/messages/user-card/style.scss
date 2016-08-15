@@ -1,0 +1,28 @@
+.message-user-card {
+  padding: 10px;
+  font-size: 10pt;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  &:hover {
+    cursor: pointer;
+    background-color: rgb(48, 151, 209);
+    color: #FFFFFF;
+  }
+
+  .name-container, .date-container {
+    width: 47%;
+    overflow: auto;
+    float: left;
+  }
+
+  .date-container {
+    text-align: right;
+    font-size: 10pt;
+    color: #999999;
+  }
+
+  .message-blurb-container {
+    overflow: auto;
+    text-overflow: ellipsis;
+    max-height: 40px;
+  }
+}

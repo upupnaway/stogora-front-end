@@ -1,0 +1,25 @@
+.comment-card {
+  color: gray;
+  .img-circle {
+    max-height: 100px;
+  }
+  .user-info {
+    text-align: center;
+    a {
+      color: $theme-color; 
+    }
+  }
+  .comment {
+    color: $theme-color;
+    font-weight: 300;
+  }
+  .post-info {
+    font-size: .8em;
+  }
+  .upvotes {
+    text-align: center;
+    .score {
+      font-size: 3em;
+    }
+  }
+}

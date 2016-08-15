@@ -1,0 +1,40 @@
+.message-bubble-container {
+    clear: both;
+    .message-img {
+        height: 35px;
+        width: 35px;
+        &.left {
+            float: left;
+            margin-right: 10px;
+        }
+        &.right {
+            float: right;
+            margin-left: 10px;
+        }
+
+    }
+    .message-bubble {
+        border-radius: 2px;
+        max-width: 70%;
+        padding: 5px 10px 5px 10px;
+        &.left {
+            background-color: #16b5f6;
+            float: left;
+        }
+        &.right {
+            background-color: #76cb3a;
+            float: right;
+        }
+    }
+    .date-container {
+        clear: both;
+        font-size: 10pt;
+        margin-bottom: 5px;
+        &.left {
+            float: left;
+        }
+        &.right {
+            float: right;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="col-sm-4">
+  <div class="message-thread-name-container">
+    <h2>Inbox</h2>
+  </div>
+  {{#each model as |messageThread|}}
+  	{{#link-to "prototype.messages.conversation" messageThread.id class="thread-link"tagName="div"}}
+      {{messages/user-card messageThread=messageThread}}
+    {{/link-to}}
+  {{/each}}
+  </div>
+  <div class="col-sm-8">
+    {{outlet}}
+  </div>
+</div>

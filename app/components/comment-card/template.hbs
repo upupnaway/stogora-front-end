@@ -1,0 +1,25 @@
+<div class="comment-card">
+  <div class="card card-block">
+    <div class="row">
+      <div class="col-sm-1 upvotes">
+        <span>Points</span>
+        <span class="score">{{comment.upvotes}}</span>
+      </div>
+      <div class="col-sm-2 user-info">
+        <img src={{comment.user.profilePhoto}} class="img-circle">
+        <div>{{#link-to 'prototype.user.profile' comment.user.id}}{{comment.user.fullName}}{{/link-to}}</div>
+      </div>
+      <div class="col-sm-8">
+      <div class="card-title">
+        <span class="listing-title">{{listing-titleting.title}}</span>
+        <div class="post-info">
+          <span>Posted</span>
+          <span>{{timePosted}}</span>
+        </div>
+      </div>
+      <div class="comment">
+        <span>{{comment.message}}</span>
+      </div>
+      </div>
+    </div>
+  </div></div>
